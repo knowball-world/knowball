@@ -79,53 +79,59 @@
 <body>
     <div class="container">
         <h1>Account and Data Deletion Request</h1>
-        
+
         <section>
-            <p>At <strong>T.C.</strong>, we value your privacy. If you no longer wish to use <strong>Know Ball</strong> and want your account and all associated personal data permanently deleted, we provide simple ways to do so. Initiating an account deletion will permanently erase your profile and all associated history from our systems.</p>
+            <p>At <strong>T.C.</strong>, we value your privacy. If you no longer wish to use <strong>Know Ball</strong> and want your account and all associated personal data permanently deleted, you can request immediate deletion in the app or via email. Before deleting your account, you can optionally export a JSON copy of your personal data under <strong>Settings &gt; Export My Data</strong>.</p>
         </section>
 
         <section>
             <h2>What Data Will Be Deleted?</h2>
-            <p>When your account is deleted, we permanently erase the following from our active databases:</p>
+            <p>When your account is deleted, we permanently erase the following from our active databases and third-party processors:</p>
             <ul>
-                <li>Your account profile (email address, username, authentication tokens).</li>
-                <li>Your entire gameplay history, high scores, and leaderboard entries.</li>
-                <li>Any telemetry, analytics, or coin transaction logs linked directly to your user ID.</li>
+                <li><strong>Account &amp; Profile:</strong> Your Firebase Authentication record (email address, authentication tokens), private user document, internal anti-cheat state, public profile, username reservation, and optional profile avatar stored in Cloud Storage.</li>
+                <li><strong>Gameplay &amp; Social Data:</strong> Your gameplay history, XP, high scores, leaderboard entries, story ratings, notifications, and friend graph connections (including reciprocal cleanup).</li>
+                <li><strong>Subscription Profile:</strong> Your RevenueCat subscriber record is requested for deletion via RevenueCat's GDPR erasure endpoint.</li>
             </ul>
-            <p><em>Note: If you have purchased an auto-renewing subscription, please ensure you cancel it directly through your Apple App Store or Google Play account. Deleting your account with us does not automatically cancel third-party platform billing.</em></p>
+
+            <h2>What Data Is Anonymized or Retained?</h2>
+            <ul>
+                <li><strong>Moderation Reports:</strong> Any abuse reports you previously submitted are anonymized (replaced with <code>"[deleted]"</code>) so safety records no longer identify you.</li>
+                <li><strong>Anti-Fraud &amp; Compliance Proof:</strong> Non-personal store transaction deduplication IDs and a one-way cryptographic SHA-256 hash of your deleted user ID (containing a timestamp and cleanup status, with zero personal fields) are retained to prevent replay fraud and demonstrate GDPR Art. 17 erasure compliance.</li>
+            </ul>
+            <p><em>Note: If you have an active auto-renewing subscription, please cancel it directly through your Apple App Store or Google Play account settings. Deleting your Know Ball account does not automatically cancel store billing.</em></p>
         </section>
 
         <section>
             <h2>How to Delete Your Account and Data</h2>
-            
+
             <h3>Method 1: Immediate In-App Deletion (Recommended)</h3>
-            <p>The fastest way to delete your account and instantly wipe all data is directly inside the app:</p>
+            <p>The fastest way to delete your account and trigger instant erasure is directly inside the app:</p>
             <div class="method-box">
                 <ol>
                     <li>Open <strong>Know Ball</strong> on your device.</li>
-                    <li>Navigate to the <strong>Settings</strong> screen.</li>
-                    <li>Go to the <strong>Account & Security</strong> section.</li>
-                    <li>Tap the <strong>Delete Account</strong> button and confirm your choice.</li>
+                    <li>Navigate to the <strong>Settings</strong> screen (optionally tap <strong>Export My Data</strong> first to save a JSON copy).</li>
+                    <li>Go to the <strong>Account &amp; Security</strong> section.</li>
+                    <li>Tap <strong>Delete Account</strong>, complete the recent re-authentication check (password, Google Sign-In, or Sign in with Apple within 5 minutes), and confirm your choice.</li>
                 </ol>
-                <p style="margin-bottom: 0; margin-top: 10px;"><strong>Result:</strong> Your account will be closed immediately, and all associated personal data will be triggered for instant, permanent erasure from our active databases.</p>
+                <p style="margin-bottom: 0; margin-top: 10px;"><strong>Result:</strong> Your account is closed immediately and all personal data listed above is permanently erased across Auth, Firestore, Cloud Storage, and RevenueCat.</p>
             </div>
 
             <h3>Method 2: Web / Email Request</h3>
-            <p>If you have already uninstalled the app, or if you have a special request regarding additional data checks or specific telemetry deletion, you can submit a request via email:</p>
-            
+            <p>If you have already uninstalled the app, or if you have a specific data deletion or privacy request, you can submit a request via email:</p>
+
             <div class="method-box email">
                 <ol>
                     <li>Send an email to <strong><a href="mailto:support@knowball.world">support@knowball.world</a></strong>.</li>
-                    <li>You must send this email from the exact email address associated with your Know Ball account to verify your identity.</li>
+                    <li>Send this email from the exact email address associated with your Know Ball account so we can verify your identity.</li>
                     <li>Use the subject line: <span class="code">Account Deletion Request - Know Ball</span></li>
-                    <li>State clearly whether you want a standard account deletion or have a special request regarding your personal data.</li>
+                    <li>State clearly whether you want standard full account deletion or have a specific request regarding your personal data.</li>
                 </ol>
                 <p style="margin-bottom: 0; margin-top: 10px;"><strong>Processing Time:</strong> Email and manual web requests are verified and processed within <strong>30 days</strong>.</p>
             </div>
         </section>
-        
+
         <section style="margin-top: 40px; font-size: 0.9em; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 15px;">
-            <p>For more detailed information on how we handle and protect your information, please read our <a href="privacy.html">Privacy Policy</a>.</p>
+            <p>For more detailed information on how we handle and protect your information, please read our <a href="privacy.html">Privacy Policy</a> and <a href="tos.html">Terms of Service</a>.</p>
         </section>
     </div>
 </body>
