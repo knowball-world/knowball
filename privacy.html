@@ -74,71 +74,88 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="date"><strong>Effective Date:</strong> April 20, 2026</p>
+        <p class="date"><strong>Effective Date:</strong> November 26, 2026</p>
 
         <section>
             <h2>1. Introduction</h2>
-            <p>Welcome to <strong>Know Ball</strong> ("we," "our," or "us"), a mobile application developed by <strong>T.C.</strong>. We are committed to protecting your privacy and ensuring that your personal data is handled securely and responsibly. This Privacy Policy explains how we collect, use, and safeguard your information when you play our game and use our services.</p>
+            <p>Welcome to <strong>Know Ball</strong> ("we," "our," or "us"), a mobile application developed and operated by <strong>T.C.</strong>, who acts as the data controller for personal data processed through the App. We are committed to protecting your privacy and ensuring that your personal data is handled securely and responsibly. This Privacy Policy explains how we collect, use, and safeguard your information when you play our game and use our services.</p>
         </section>
 
         <section>
             <h2>2. Information We Collect</h2>
-            <p>We collect information to provide, maintain, and improve our app. The data we collect falls into two categories:</p>
+            <p>The information we process depends on whether you play as a Guest or create a verified cloud account:</p>
             <ul>
-                <li><strong>Information You Provide to Us:</strong> If you choose to create an account, contact our support team, or participate in leaderboards, we may collect your email address, chosen username, and support message history.</li>
-                <li><strong>Information Collected Automatically:</strong> When you access the app, we automatically collect certain telemetry and usage data. This includes your device type, operating system, unique device identifiers (such as Apple IDFA or Google Advertising ID), IP address, app crash reports, and basic gameplay statistics (such as high scores or progression).</li>
+                <li><strong>Guest Mode (Local Only):</strong> If you play without signing in, your game progress and preferences are stored locally on your device without creating a cloud account profile.</li>
+                <li><strong>Information You Provide to Us:</strong> If you create an account, customize your profile, submit a story rating, report another user, or contact support, we collect your email address, chosen username, optional profile avatar, optional favorite club or country selection, friend connections, story ratings, and moderation or support messages.</li>
+                <li><strong>Avatar Metadata Stripping:</strong> When you upload a profile avatar, our app and backend automatically strip embedded EXIF, camera, and GPS/location metadata before hosting the image.</li>
+                <li><strong>Public vs. Private Account Data:</strong> Other signed-in users can view your public social profile and leaderboard entries (username, avatar, level, XP, high scores, favorite club/country, and unlocked badges). Your email address, virtual currency and energy balances, notification inbox, and internal anti-cheat or rate-limiting state are restricted and never exposed to other players.</li>
+                <li><strong>Information Collected Automatically:</strong> When you use online features, technical data such as device attestation signals (for anti-abuse), mobile advertising IDs (only as permitted by your ad consent and age settings), and gameplay/purchase state (high scores, campaign progress, achievements, and subscription entitlements) are processed. Know Ball does not invoke third-party IP geolocation lookups during sign-in or profile creation.</li>
             </ul>
         </section>
 
         <section>
             <h2>3. Third-Party Services</h2>
-            <p>To operate, monetize, and analyze the app, we utilize trusted third-party services. These services may collect and process data according to their own privacy policies. We currently use:</p>
+            <p>To operate, secure, and monetize the App, we utilize trusted third-party service providers that process data under their respective privacy policies:</p>
             <ul>
-                <li><strong>Google Play Services & Apple App Store:</strong> For app distribution and basic platform analytics.</li>
-                <li><strong>RevenueCat:</strong> To manage auto-renewing subscriptions and in-app purchases safely. <em>(Note: We do not collect or store your credit card information; this is handled entirely by Apple and Google).</em></li>
-                <li><strong>Google AdMob:</strong> To serve personalized or non-personalized advertisements within the app.</li>
-                <li><strong>Firebase Analytics & Crashlytics (by Google):</strong> To monitor app stability, track crashes, and understand how users interact with our menus and trivia questions.</li>
+                <li><strong>Google Play Services &amp; Apple App Store:</strong> For app distribution, operating-system crash/store telemetry, and billing.</li>
+                <li><strong>RevenueCat:</strong> For validating and managing auto-renewing subscriptions and consumable in-app purchases using your App User ID and store transaction identifiers. <em>(We do not collect or store payment card details; payments are handled by Google or Apple.)</em></li>
+                <li><strong>Google AdMob:</strong> To serve personalized or non-personalized advertisements and verify rewarded-ad completions via Server-Side Verification (SSV).</li>
+                <li><strong>Firebase Authentication, Cloud Firestore &amp; Cloud Storage (by Google):</strong> For secure account authentication, cloud save synchronization, and hosting stripped profile avatars. Firebase Analytics collection is deactivated.</li>
+                <li><strong>Firebase App Check (Google Play Integrity &amp; Apple App Attest):</strong> To verify that backend requests originate from an authentic, untampered installation of Know Ball.</li>
+                <li><strong>Resend:</strong> To deliver moderation alert emails (containing details of user-submitted abuse reports) to our support inbox (<a href="mailto:support@knowball.world">support@knowball.world</a>).</li>
+                <li><strong>GeoBoundaries:</strong> Open-source administrative boundary data bundled for the map interface, licensed under CC BY 4.0.</li>
             </ul>
         </section>
 
         <section>
-            <h2>4. Cookies and Tracking Technologies</h2>
-            <p>Our app and our third-party partners (like AdMob) use tracking technologies, such as mobile advertising IDs, to serve relevant ads. Depending on your region (such as the EU/EEA), you will be presented with a consent banner upon opening the app for the first time, allowing you to opt-in or opt-out of personalized advertising. You can also reset or disable your device's advertising ID at any time through your iOS or Android device settings.</p>
+            <h2>4. Advertising Consent, Tracking &amp; Legal Bases (GDPR Art. 6)</h2>
+            <p>Where required by law (including the EU/EEA and UK), Know Ball displays a User Messaging Platform (UMP) consent prompt before loading personalized ads. You can review, modify, or withdraw your advertising consent at any time under <strong>Settings &gt; Privacy Options</strong>, or reset your advertising ID in your device settings.</p>
+            <p>Under the GDPR, we process personal data on the following legal bases:</p>
+            <ul>
+                <li><strong>Performance of a Contract (Art. 6(1)(b)):</strong> Providing your account, cloud saves, leaderboards, friends features, story ratings, and paid/virtual entitlements.</li>
+                <li><strong>Consent (Art. 6(1)(a)):</strong> Serving personalized advertising via Google AdMob (when applicable and permitted).</li>
+                <li><strong>Legitimate Interests (Art. 6(1)(f)):</strong> Protecting game integrity, preventing fraud, enforcing rate limits and App Check device attestation, and moderating user reports.</li>
+                <li><strong>Compliance with Legal Obligations (Art. 6(1)(c)):</strong> Keeping a minimal non-PII erasure proof and complying with valid consumer, tax, and data-protection requests.</li>
+            </ul>
         </section>
 
         <section>
             <h2>5. Data Retention and Account Deletion</h2>
-            <p>We retain your data only for as long as is necessary to provide you with the services of <strong>Know Ball</strong> or to comply with legal obligations.</p>
+            <p>We retain your personal data only for as long as needed to provide the Know Ball service, prevent fraud, or satisfy legal obligations.</p>
             <ul>
-                <li><strong>Account Deletion:</strong> If you have created an account, you have the right to delete it and all associated data at any time. You can request complete account deletion directly within the app by navigating to <strong>More > Delete Account</strong>, or by contacting us via email at the address provided below. Upon request, your account and gameplay data will be permanently erased from our active databases.</li>
+                <li><strong>In-App Account Deletion:</strong> You can permanently delete your account at any time by navigating to <strong>Settings &gt; Delete Account</strong> (or by emailing <a href="mailto:support@knowball.world">support@knowball.world</a>). For your security, in-app deletion requires recent re-authentication (within the last 5 minutes via your password, Google Sign-In, or Sign in with Apple).</li>
+                <li><strong>Scope of Erasure:</strong> Deleting your account permanently removes your Firebase Auth record, private user document and internal anti-cheat state, public profile, username reservation, leaderboard score records, story ratings, friend graph connections, notifications, Cloud Storage avatar, and RevenueCat subscriber record.</li>
+                <li><strong>Moderation &amp; Audit Records:</strong> Any abuse reports you previously submitted are anonymized (replaced with <code>"[deleted]"</code>), while non-personal anti-fraud purchase deduplication records and a one-way SHA-256 cryptographic hash of your deleted user ID (with timestamp and cleanup status, containing zero personal fields) are retained to demonstrate GDPR Art. 17 erasure compliance.</li>
             </ul>
         </section>
 
         <section>
-            <h2>6. Children's Privacy</h2>
-            <p><strong>Know Ball</strong> is not directed at children under the age of 13 (or under 16 in certain jurisdictions, including the EU). We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately, and we will take steps to securely delete that information.</p>
+            <h2>6. Children's Privacy &amp; EU Age Gate</h2>
+            <p><strong>Know Ball</strong> is not directed at children under 13 years of age (or under 16 in EEA/EU member states unless permitted by local law with parental authorization). During account registration, users must confirm they meet the minimum age requirement. Users in EEA regions who indicate they are under the digital age of consent receive age-restricted, non-personalized advertising treatment.</p>
+            <p>If you are a parent or guardian and believe your child has provided us with personal data in violation of this policy, please contact us at <a href="mailto:support@knowball.world">support@knowball.world</a> so we can promptly erase that data.</p>
         </section>
 
         <section>
             <h2>7. Your GDPR Data Protection Rights</h2>
-            <p>Since we are based in Romania, users within the European Economic Area (EEA) have specific rights under the General Data Protection Regulation (GDPR). You have the right to:</p>
+            <p>Since we operate from Romania, users in the European Economic Area (EEA) and UK have specific rights under the GDPR. You have the right to:</p>
             <ul>
-                <li><strong>Access:</strong> Request copies of your personal data.</li>
-                <li><strong>Rectification:</strong> Request that we correct any information you believe is inaccurate.</li>
-                <li><strong>Erasure:</strong> Request that we erase your personal data ("Right to be Forgotten").</li>
-                <li><strong>Restriction:</strong> Request that we restrict the processing of your personal data.</li>
-                <li><strong>Data Portability:</strong> Request that we transfer the data we have collected to another organization, or directly to you.</li>
+                <li><strong>Access &amp; Data Portability (Art. 15 &amp; 20):</strong> Generate and copy a structured JSON export of your personal data (profile, friends, notifications, scores, and story ratings, omitting internal anti-cheat telemetry) directly in the app under <strong>Settings &gt; Export My Data</strong>, or request it by email.</li>
+                <li><strong>Rectification (Art. 16):</strong> Update your profile details in-app or ask us to correct inaccurate personal data.</li>
+                <li><strong>Erasure (Art. 17):</strong> Permanently delete your account and associated personal data via <strong>Settings &gt; Delete Account</strong> or by contacting support.</li>
+                <li><strong>Restriction &amp; Objection (Art. 18 &amp; 21):</strong> Request restriction of processing or object to processing based on legitimate interests.</li>
+                <li><strong>Withdraw Consent (Art. 7(3)):</strong> Withdraw personalized ad consent at any time via <strong>Settings &gt; Privacy Options</strong> without affecting the lawfulness of prior processing.</li>
+                <li><strong>Lodge a Complaint (Art. 77):</strong> File a complaint with the Romanian National Supervisory Authority for Personal Data Processing (<strong>ANSPDCP</strong>, <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer">dataprotection.ro</a>) or your local EEA supervisory authority.</li>
             </ul>
         </section>
 
         <section>
             <h2>8. Changes to This Privacy Policy</h2>
-            <p>We may update our Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top. We advise you to review this page periodically.</p>
+            <p>We may update our Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of material changes by updating this page and the "Effective Date" above, and where appropriate, within the App. We advise you to review this page periodically.</p>
         </section>
 
         <section>
             <h2>9. Contact Us</h2>
-            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact us at:</p>
+            <p>If you have any questions, concerns, or privacy requests regarding Know Ball, please contact the controller (<strong>T.C.</strong>) at:</p>
             <div class="contact-info">
                 <strong>Email:</strong> <a href="mailto:support@knowball.world">support@knowball.world</a>
             </div>
